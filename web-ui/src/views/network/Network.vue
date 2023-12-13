@@ -7,7 +7,6 @@
         <div class="container-title">
           <img :src="DataNerveNetwork.iconUrl || './img/neverwork.png'" alt="">
           <span class="container-title-title">NerveNetwork</span>
-          <!-- <span class="container-label font14">@{{$t('assets.HeterogeneousChain')}}</span> -->
         </div>
         <p class="network-text">
           {{ $t('assets.NerveNetwork') }}
@@ -178,28 +177,6 @@ export default {
     openUrl(url) {
       window.open(url)
     },
-    /**
-     * @disc: 查询平行链信息
-     * @params:
-     * @date: 2020-06-30 19:36
-     * @author: Wave
-     */
-    // getHoldData() {
-    //   this.$post('/', 'getOtherChainList', [])
-    //     .then((response) => {
-    //       //console.log(response);
-    //       if (response.hasOwnProperty("result")) {
-    //         for (let item of response.result) {
-    //           item.defaultAsset.initCoins = Number(timesDecimals(item.defaultAsset.initCoins, item.defaultAsset.decimals))
-    //         }
-    //         this.holdData = response.result;
-    //         this.pageTotal = response.result.length
-    //       }
-    //     }).catch((error) => {
-    //       console.log(error)
-    //     })
-    // },
-
     /**
      * url 连接跳转
      * @param name
